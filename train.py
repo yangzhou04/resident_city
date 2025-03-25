@@ -62,7 +62,7 @@ user_id_test = X_test['user_id'].values
 
 # Define embedding model
 num_users = 10000  # Unique user IDs
-embedding_dim = 16
+embedding_dim = 16 # Embedding dimension, could be tuned to 700 for city embedding
 
 # Input layer for user_id
 user_input = Input(shape=(1,), name='user_input')

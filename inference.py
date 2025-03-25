@@ -47,5 +47,6 @@ new_users = pd.DataFrame({
 # lr_model = joblib.load('lr_meta_model.pkl')
 # label_encoder = joblib.load('label_encoder.pkl')
 
+## TODO - Load pre-trained models and label_encoder (assumes they are saved)
 predicted_cities = predict_resident_city(new_users, xgb_model, tf_model, lr_model, label_encoder)
 print("Predicted Cities:", predicted_cities)
